@@ -1,0 +1,29 @@
+body.cdl {
+  position: absolute;
+  left: 210px;
+  font-family: "Century Gothic";
+  font-size: 18px;
+}
+
+body.cdl a {
+  color: black;
+}
+
+body.cdl div.info a,
+body.cdl div.programma a {
+  color: #009999;
+}
+
+.info,
+.programma {
+  border-radius: 10px;
+  border: 2px solid #efefef;
+  padding: 1em;
+}
+.programma {
+  margin-bottom: 5em;
+}
+.programma ul {
+  list-style-type: none;
+  padding: unset;
+}

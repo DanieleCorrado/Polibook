@@ -1,0 +1,24 @@
+body.activity {
+  position: absolute;
+  left: 210px;
+  font-family: "Century Goyhic";
+  font-size: 18px;
+}
+
+body.activity a {
+  color: black;
+}
+
+body.activity div.info a,
+body.activity div.programma a {
+  color: #009999;
+}
+.programma {
+  margin-bottom: 5em;
+}
+
+.info {
+  border-radius: 10px;
+  border: 2px solid #efefef;
+  padding: 1em;
+}

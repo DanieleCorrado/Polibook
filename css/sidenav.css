@@ -1,0 +1,86 @@
+* {
+  font-family: "Century Gothic";
+}
+/*queste modifiche saranno applicate solo a ciò che sta in sidenav*/
+div.sidenav {
+  text-align: left;
+  height: 100%;
+  /* ho usato un valore assoluto altrimenti si rimpicciolisce al cambiare delle dimensioni della finestra*/
+  width: 200px;
+  background-color: #009999;
+  box-sizing: border-box;
+  position: fixed; /*serve per mantenere la sua posizione fissa sullo schermo*/
+  top: 0; /*top e left servono per evitare che la barra appaia lontano dai bordi*/
+  left: 0;
+  overflow-x: hidden; /* tutto ciò che esce dalla barra di navigazion è nascosto*/
+  padding-top: 20px; /*gli elementi all'interno saranno allontanati di 20 pixel dal lato superiore della barra*/
+  border-radius: 0px 8px 8px 0px; /*per avere gli angoli arrotondati*/
+}
+
+/*queste modifiche sono applicate solo alle liste puntate all'interno della sidenav*/
+div.sidenav > ul {
+  font-size: 18px;
+  list-style-type: none; /*non appaiono i bullet point della lista*/
+  vertical-align: middle; /*allinea verticalmente al centro*/
+  padding-left: unset; /*serve per far in modo che il box che contiene l'elemento sia vicino al bordo sinistro: così facendo passandoci il mouse sopra il bacground cambia colore in modo sensato e non da metà barra*/
+}
+
+/*queste modifiche interessano solo i link all'interno della lista contenuta nel sidenav*/
+
+div.sidenav > ul a {
+  color: white; /*colora il testo di bianco*/
+  transition: background-color 0.5s; /*permette di avere una transizione tra hover e non hover del colore del background di 0.5s, ovvero in 0.5s il background passa da 009999 a 4cb1b1 quando si passa il mouse sopra*/
+  text-decoration: none; /*serve per evitare che i link siano evidenziati e sottolineati*/
+  padding: unset;
+}
+
+/*riguarda gli elementi della lista in sidenav*/
+div.sidenav li {
+  vertical-align: center;
+  padding-left: 15%;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+/*riguarda gli elementi della lista in sidenav quando ci passi il mouse sopra*/
+div.sidenav a:hover > li {
+  background-color: #4cb1b1;
+  font-size: 105%; /*permette di ingrandire leggermente il testo così da evidenziare meglio la scelta*/
+}
+
+div.sidenav button.logout-button {
+  margin: 15%;
+  margin-top: 5%;
+  background-color: #fff;
+  border-color: transparent;
+  border-radius: 25px;
+  width: 70%;
+  height: 1.5em;
+  font-size: 18px;
+  color: #009999;
+  font-weight: bold;
+  box-shadow: 2px 2px #00000055;
+}
+
+div.sidenav button.logout-button:hover {
+  box-shadow: 3px 3px 4px 4px #00000055; /*quando il mouse è sul pulsante sembra sollevarsi*/
+  cursor: pointer;
+}
+
+/*riguarda solo il logo nella sidenav*/
+div.logo {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 26px;
+  margin-bottom: 0.1em;
+  color: #fff;
+}
+
+div.logo > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+div.logo img {
+  width: 4em; /*il logo è troppo grande, quindi è rimpicciolito*/
+}

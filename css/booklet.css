@@ -1,0 +1,94 @@
+body.booklet {
+  position: absolute; /*Serve perchè se no va sotto la barra di navigazione laterale*/
+  left: 210px;
+  width: 78%; /* serve a limitare la lunghezza della finestra in modo che non esca fuori dalla schermata*/
+  font-size: 18px;
+}
+
+div.graphs {
+  width: 70vw;
+  display: block;
+  padding-left: 15%; /*così appaiono centrati*/
+}
+
+canvas {
+  margin: 15px;
+  box-shadow: 3px 3px 4px 4px #88888855; /*Ombra*/
+  border-radius: 5px;
+}
+/* setup dei tab: bottoni e tabelle*/
+div.superati {
+  display: block;
+}
+div.pianificati {
+  display: none;
+}
+
+div.buttons > button {
+  border-radius: 5px;
+  padding: 20px;
+  border-color: transparent;
+}
+
+div.buttons > button.superati.active,
+div.buttons > button.pianificati.active {
+  background-color: #009999;
+  color: white;
+  cursor: pointer;
+}
+
+div.buttons > button.superati,
+div.buttons > button.pianificati {
+  background-color: #e7e7e7;
+  color: #000000;
+  cursor: default;
+}
+@media only screen and (min-width: 800px) {
+  table {
+    width: 100%; /*estendi per tutta la dimensione dello schermo*/
+  }
+}
+
+table.exam-table {
+  table-layout: fixed; /**/
+  word-wrap: break-word;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 100px; /* serve a non far apparire la tabella troppo attaccata al bordo inferiore della finestra */
+  padding: 10px;
+  box-shadow: 3px 3px 4px 4px #88888855; /*ombra*/
+  border-radius: 5px;
+  border-color: transparent;
+  text-align: center;
+}
+
+table.exam-table table td {
+  border-color: transparent;
+}
+
+table td a {
+  color: #009999;
+}
+
+table th {
+  border-color: transparent;
+  border-bottom-color: #000000;
+}
+
+p.statistics {
+  text-align: center;
+}
+p.statistics table {
+  width: unset;
+}
+
+p.statistics table td,
+p.statistics table th {
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+.evidenziato {
+  color: #009999;
+  text-decoration: none;
+}

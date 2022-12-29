@@ -1,0 +1,122 @@
+body.exams-body {
+  position: absolute;
+  font-size: 18px;
+  left: 210px; /* serve per evitare che il testo vada sotto la barra di navigazione*/
+  width: 78%;
+}
+/* setup iniziale delle div che conterranno le tabelle, saranno controllate in seguito tramite javascript*/
+div.prenotabili {
+  display: block;
+}
+div.prenotati {
+  display: none;
+}
+
+div.buttons > button {
+  padding: 20px;
+  border-color: transparent;
+  border-radius: 5px;
+}
+
+div.buttons > button.prenotati.active,
+div.buttons > button.prenotabili.active {
+  background-color: #009999;
+  color: white;
+  cursor: pointer;
+}
+
+div.buttons > button.prenotati,
+div.buttons > button.prenotabili {
+  background-color: #e7e7e7;
+  color: #000000;
+  cursor: default;
+}
+/* fine setup*/
+@media only screen and (min-width: 800px) {
+  /* Per dispositivi con uno schermo largo setta una dimensione massima alla tabella*/
+  table {
+    width: 100%; /*estendi per tutta la dimensione dello schermo*/
+  }
+}
+table {
+  table-layout: fixed; /**/
+  word-wrap: break-word;
+  margin-left: 20px;
+  margin-top: 20px;
+  padding: 10px;
+  box-shadow: 3px 3px 4px 4px #88888855; /*ombra*/
+  border-radius: 5px;
+  border-color: transparent;
+  text-align: center;
+}
+
+table th {
+  border-color: transparent;
+  border-bottom-color: #000000;
+}
+table td {
+  border-color: transparent;
+}
+
+/* se l'esame è selezionabile mostralo con il cursore*/
+table tr.exam.selectable:hover {
+  color: #009999;
+  cursor: pointer;
+}
+
+/* style del modal per confermare le scelte*/
+div.modal {
+  display: none;
+  position: fixed;
+  z-index: 1; /* il modal appare sopra al contenuto della pagina*/
+  left: 0;
+  top: 0;
+  width: 100%; /* copre tutto il contenuto*/
+  height: 100%;
+  overflow: auto;
+  background-color: #00000055; /* sfondo grigio poco opaco */
+}
+
+div.modal-content {
+  text-align: center; /* allinea il contenuto al centro*/
+  font-family: "Century Goyhic";
+  font-size: 18px;
+  border-radius: 5px;
+  background-color: #fefefe; /* sfondo bianco */
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 2%;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  border-color: transparent;
+}
+
+div.modal-content p {
+  text-align: left; /* allinea il testo a sinistra*/
+}
+
+div.modal button {
+  background-color: #009999;
+  color: white;
+  padding: 5px;
+  margin-right: 10px;
+  border-color: transparent;
+  cursor: pointer; /* cambia il cursore per mostrare interattività*/
+  min-width: 100px; /*dimensione minima dei pulsanti*/
+  min-height: 30px;
+  border-radius: 5px;
+}
+
+div.modal button.cancel-button {
+  background-color: #e7e7e7; /* il tasto annulla appare di colore diverso rispetto al tasto ok*/
+  color: #000000;
+}
+
+div.modal button:hover,
+div.modal button:focus {
+  box-shadow: 2px 2px 3px 3px #88888855; /* aggiungi ombra quando il cursore è sopra al pulsante per comunicare interattività*/
+}
+
+.evidenziato {
+  color: #009999;
+  text-decoration: none;
+}
