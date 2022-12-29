@@ -1,5 +1,5 @@
-Project done for the software engineering exam. P
-resents a university website where the user (student) can monitor the progress of his university career.
+Project done for the software engineering exam.
+Presents a university website where the user (student) can monitor the progress of his university career.
 
 Convenzioni:
     * javascript : camelCase -> esempio, esempioSecondo, ClasseEsempio
