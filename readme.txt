@@ -1,3 +1,6 @@
+Project done for the software engineering exam. P
+resents a university website where the user (student) can monitor the progress of his university career.
+
 Convenzioni:
     * javascript : camelCase -> esempio, esempioSecondo, ClasseEsempio
     * php : snake_case -> esempio, esempio_secondo, Classe_esempio
@@ -5,8 +8,7 @@ Convenzioni:
 
 Commenti:
     * in italiano
-    * pls don't ignore them :(
-    * !! per indicare importanza (si può usare TODO per indicare qualcosa da fare, ma in qualunque caso preceduto da !! così si trova subito)
+    * !! per indicare importanza
 
 Come usare dbh.inc.php:
     1) usare open_conn() che ritorna la connessione al db
@@ -17,8 +19,7 @@ Come usare dbh.inc.php:
     3) chiudere la connessione con $conn -> close() (si consiglia di farlo sempre);
 
 DB:
-    * il file '/my_polibooklet.sql' è il file contenente la struttura del db. NON caricatelo su altervista, serve a noi così da importarlo sul pc e poter testare le query sui nostri database
-        evitando di rompere il database di altervista
+    * il file '/my_polibooklet.sql' è il file contenente la struttura del db.
 
 '/javascript/methods.js':
     * contiene i metodi javascript in comune
