@@ -2,9 +2,9 @@ Project done for the software engineering exam.
 Presents a university website where the user (student) can monitor the progress of his university career.
 
 Convenzioni:
-    * javascript : camelCase -> esempio, esempioSecondo, ClasseEsempio
-    * php : snake_case -> esempio, esempio_secondo, Classe_esempio
-    * html, css: kebab-case -> esempio, esempio-secondo, classe-esempio
+    * javascript : camelCase
+    * php : snake_case
+    * html, css: kebab-case
 
 Commenti:
     * in italiano
