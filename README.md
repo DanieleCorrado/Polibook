@@ -1,6 +1,6 @@
 # University site
 Project done for the software engineering exam.
-Presents a university website where the user (student) can monitor the progress of his university career.re
+Presents a university website where the user (student) can monitor the progress of his university career.refewr
 
 Convenzioni:
     * javascript : camelCase
